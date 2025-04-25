@@ -10,7 +10,7 @@ O cenário modela empresas que possuem múltiplos colaboradores, onde cada colab
 
 ## Pré-requisitos
 
-- Java 17 ou superior  
+- Java 21  
 - Maven  
 - XAMPP (com MariaDB habilitado)  
 - Postman ou Bruno (para testar os endpoints REST)  
@@ -31,14 +31,7 @@ O cenário modela empresas que possuem múltiplos colaboradores, onde cada colab
 CREATE DATABASE av1;
 ```
 
-### 2. Clonar o Repositório
-
-```bash
-git clone <URL_DO_REPOSITORIO>
-cd <NOME_DO_REPOSITORIO>
-```
-
-### 3. Configurar o Projeto
+### 2. Configurar o Projeto
 
 Verifique `src/main/resources/application.properties`:
 
@@ -52,7 +45,7 @@ spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MariaDBDialect
 ```
 
-### 4. Executar a Aplicação
+### 3. Executar a Aplicação
 
 ```bash
 mvn clean install
