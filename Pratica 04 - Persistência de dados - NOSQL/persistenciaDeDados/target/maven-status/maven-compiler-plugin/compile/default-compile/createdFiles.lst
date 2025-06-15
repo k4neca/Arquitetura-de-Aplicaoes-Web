@@ -1,0 +1,5 @@
+com\pratica4\persistenciaDeDados\PersistenciaDeDadosApplication.class
+com\pratica4\persistenciaDeDados\model\Tarefa.class
+com\pratica4\persistenciaDeDados\controller\TarefaController.class
+com\pratica4\persistenciaDeDados\repository\TarefaRepository.class
+com\pratica4\persistenciaDeDados\service\TarefaService.class

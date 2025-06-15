@@ -1,0 +1,11 @@
+meta {
+  name: Atualizar uma tarefa existente
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8080/tarefas/{id}
+  body: none
+  auth: inherit
+}
