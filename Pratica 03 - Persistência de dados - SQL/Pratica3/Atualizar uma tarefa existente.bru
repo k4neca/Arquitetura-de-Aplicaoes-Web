@@ -1,0 +1,20 @@
+meta {
+  name: Atualizar uma tarefa existente
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8080/tarefas/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "titulo": "Finalizar projeto",
+    "descricao": "Back-end e testes",
+    "status": "Em andamento"
+  }
+  
+}

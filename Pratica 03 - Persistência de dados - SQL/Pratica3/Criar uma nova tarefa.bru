@@ -1,0 +1,20 @@
+meta {
+  name: Criar uma nova tarefa
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/tarefas
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "titulo": "Finalizar projeto",
+    "descricao": "Terminar o backend até sexta",
+    "status": "Pendente"
+  }
+  
+}
