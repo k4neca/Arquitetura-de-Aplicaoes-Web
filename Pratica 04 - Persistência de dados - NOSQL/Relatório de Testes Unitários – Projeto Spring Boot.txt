@@ -1,0 +1,63 @@
+📄 Relatório de Testes Unitários – Projeto Spring Boot
+Projeto: Testes Unitários e Mocking em Spring Boot
+
+Tecnologias Utilizadas:
+
+Java 21
+Spring Boot 3.5.0
+Spring Web, Spring Data JPA, Spring DevTools
+MariaDB
+JUnit 5
+Mockito
+Postman (testes de integração manual)
+
+✅ Objetivo
+
+O objetivo desta etapa foi implementar e validar testes unitários e de integração para os principais componentes de uma aplicação Spring Boot RESTful que gerencia entidades de usuários, garantindo a confiabilidade do código e facilitando sua manutenção.
+
+🛠️ Alterações realizadas
+
+Criação da estrutura MVC do projeto:
+
+Model: Usuario.java
+
+Repository: UsuarioRepository.java
+
+Service: UsuarioService.java
+
+Controller: UsuarioController.java
+
+Configuração do banco de dados MariaDB via application.properties
+
+Implementação de testes automatizados:
+
+Service Layer
+
+Testado com Mockito (UsuarioServiceTest)
+
+Controller Layer
+
+Testado com @WebMvcTest e MockMvc (UsuarioControllerTest)
+
+Repository Layer
+
+Teste de integração com MariaDB real (UsuarioRepositoryTest)
+
+Execução manual dos endpoints no Postman:
+
+GET /usuarios: retorna lista de usuários cadastrados.
+
+POST /usuarios: realiza inserção e validação do retorno via JSON.
+
+🧪 Resultados dos testes
+Teste	Tipo	Resultado
+deveRetornarListaDeUsuarios (Service)	Unitário	✅ Sucesso
+deveSalvarUsuario (Service)	Unitário	✅ Sucesso
+deveRetornarListaDeUsuarios (Controller)	MockMVC	✅ Sucesso
+deveCriarUsuario (Controller)	MockMVC	✅ Sucesso
+deveSalvarERecuperarUsuario (Repository)	Integração	✅ Sucesso
+GET /usuarios (Postman)	Manual	✅ Sucesso
+POST /usuarios (Postman)	Manual	✅ Sucesso
+
+📌 Conclusão
+Todos os testes foram implementados, executados e aprovados com sucesso. A estrutura da aplicação foi validada por meio de testes unitários com JUnit e Mockito, testes de integração com MariaDB, além de validações manuais via Postman. O resultado evidencia que os principais componentes da aplicação estão funcionando conforme o esperado, garantindo confiabilidade na persistência e na exposição da API REST.
