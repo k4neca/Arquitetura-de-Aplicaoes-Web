@@ -105,9 +105,5 @@ src
 │   └── com.example.authserver
 │       └── AuthIntegrationTests.java
 ```
-
-## 📄 Licença
-Este projeto utiliza a licença Apache 2.0. Veja o arquivo LICENSE para mais detalhes.
-
 ---
 Desenvolvido por Caio Almeida para fins acadêmicos 🎓
