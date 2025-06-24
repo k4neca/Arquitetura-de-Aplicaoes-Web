@@ -2,11 +2,10 @@
 
 Este projeto é uma API RESTful desenvolvida com **Spring Boot 3.5.3** que implementa autenticação e autorização por **JWT (JSON Web Token)**, com documentação interativa gerada pelo **Swagger/OpenAPI**. 
 
-## 📁 Clonando o Projeto
+## 📁 Clonando o Repositório da Disciplina 
 
 ```bash
-git clone https://github.com/seu-usuario/authserver.git
-cd authserver
+git clone https://github.com/k4neca/Arquitetura-de-Aplicaoes-Web.git
 ```
 
 ## ⚙️ Requisitos
