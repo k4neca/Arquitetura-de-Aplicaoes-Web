@@ -6,6 +6,7 @@ Este projeto é uma API RESTful desenvolvida com **Spring Boot 3.5.3** que imple
 
 ```bash
 git clone https://github.com/k4neca/Arquitetura-de-Aplicaoes-Web.git
+cd authserver
 ```
 
 ## ⚙️ Requisitos
